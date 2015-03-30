@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+    %title= data.page.title || 'Endigit'
+    %meta{:name => 'description', :content => data.page.description || 'Represent Endigit to customers and potential customers'}
+    = javascript_include_tag 'all'
+    = stylesheet_link_tag 'all'
+  %body
+    .body-wrap
+      .head
+        .head-logo
+          %img{:src => '/images/customLogo.png'}
+        .head-nav
+          %a{:href => '/'} Home
+          %a{:href => '/why-labview'} Why LabVIEW?
+          %a{:href => '/expertise'} Expertise
+          %a{:href => '/products'} Products
+          %a{:href => '/bacnet'} BACnet
+          %a{:href => '/support'} Support
+          %a{:href => '/contact'} Contact
+    = yield

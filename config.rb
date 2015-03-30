@@ -41,17 +41,19 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def ext_link(text, address)
+    return "<a rel='nofollow' target='_blank' href='#{address}'>#{text}</a>"
+  end
+end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
@@ -72,8 +74,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
+  deploy.build_before = true
   deploy.method = :git
   deploy.remote = 'production'
   deploy.branch = 'master'
-  deploy.build_before = true
 end
