@@ -1,0 +1,42 @@
+$blue1: #052a5d;
+$blue2: #2e4c7a;
+$blue3: #2b5fc0;
+$blue4: lighten($blue3, 30%);
+$grey: #8f938e;
+
+@mixin border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: $blue3;
+  text-decoration: none;
+  &:hover {
+    color: $blue2;
+  }
+}
+
+blockquote {
+  font-weight: 300;
+}
+
+div {
+  @include border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: $blue1;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $blue2;
+}
+
+img {
+  max-width: 100%;
+}
+
+

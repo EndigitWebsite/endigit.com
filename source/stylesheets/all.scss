@@ -1,1 +1,45 @@
 @import 'normalize';
+@import 'base';
+
+
+.section-wrap {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 16px;
+  width: 760px;
+  &.short {
+    padding: 0 16px;
+  }
+  &.tall {
+    padding: 64px 16px;
+  }
+}
+
+.nav-link {
+  margin-right: 16px;
+  font-weight: 300;
+}
+
+.footer {
+  background-color: $blue1;
+  margin-top: 16px;
+  .nav-link {
+    color: $blue4;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer-back {
+  background-color: $blue1;
+  height: 100%;
+  width: 100%;
+  position:  fixed;
+  z-index: -1;
+}
+
+.img-wrap {
+  float: left;
+  margin: 0 24px 16px 0;
+}

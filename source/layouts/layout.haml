@@ -5,18 +5,22 @@
     %title= data.page.title || 'Endigit'
     %meta{:name => 'description', :content => data.page.description || 'Represent Endigit to customers and potential customers'}
     = javascript_include_tag 'all'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,300'
     = stylesheet_link_tag 'all'
   %body
-    .body-wrap
-      .head
-        .head-logo
-          %img{:src => '/images/customLogo.png'}
-        .head-nav
-          %a{:href => '/'} Home
-          %a{:href => '/why-labview'} Why LabVIEW?
-          %a{:href => '/expertise'} Expertise
-          %a{:href => '/products'} Products
-          %a{:href => '/bacnet'} BACnet
-          %a{:href => '/support'} Support
-          %a{:href => '/contact'} Contact
-    = yield
+    .head.section-wrap.short
+      .head-logo
+        %img{:src => '/images/customLogo.png'}
+    .section-wrap
+      = yield
+    .footer
+      .footer-back
+      .section-wrap.tall
+        %a.nav-link{:href => '/'} Home
+        %a.nav-link{:href => '/why-labview'} Why LabVIEW?
+        %a.nav-link{:href => '/expertise'} Expertise
+        %a.nav-link{:href => '/products'} Products
+        %a.nav-link{:href => '/bacnet'} BACnet
+        %a.nav-link{:href => '/support'} Support
+        %a.nav-link{:href => '/contact'} Contact
+
