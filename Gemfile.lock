@@ -119,5 +119,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 3.3.10)
+  middleman (~> 3.0)
   middleman-deploy (~> 1.0)
