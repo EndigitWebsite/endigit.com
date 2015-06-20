@@ -1,0 +1,1 @@
+middleman --port $PORT --host $IP
