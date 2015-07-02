@@ -2,8 +2,13 @@
 %html
   %head
     %meta{:charset => 'utf-8'}
-    %title= data.page.title || 'Endigit'
-    %meta{:name => 'description', :content => data.page.description || 'Represent Endigit to customers and potential customers'}
+    %title= page_title
+    %meta{:name => 'title', :content => page_title}
+    %meta{:name => 'name', :content => page_title}
+    %meta{:property => 'og:title', :content => page_title}
+    %meta{:name => 'description', :content => page_description}
+    %meta{:itemprop => 'description', :content => page_description}
+    %meta#meta-tag-description{:property => 'og:description', :content => page_description}
     = javascript_include_tag 'all'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,300'
     = stylesheet_link_tag 'all'
@@ -11,16 +16,16 @@
     .head.section-wrap.short
       .head-logo
         %img{:src => '/images/customLogo.png'}
+      %a.nav-link{:href => '/'} Home
+      %a.nav-link{:href => '/why-labview'} Why LabVIEW?
+      %a.nav-link{:href => '/expertise'} Expertise
+      %a.nav-link{:href => '/products'} Products
+      %a.nav-link{:href => '/bacnet'} BACnet
+      %a.nav-link{:href => '/support'} Support
+      %a.nav-link{:href => '/contact'} Contact
     .section-wrap
       = yield
     .footer
       .footer-back
       .section-wrap.tall
-        %a.nav-link{:href => '/'} Home
-        %a.nav-link{:href => '/why-labview'} Why LabVIEW?
-        %a.nav-link{:href => '/expertise'} Expertise
-        %a.nav-link{:href => '/products'} Products
-        %a.nav-link{:href => '/bacnet'} BACnet
-        %a.nav-link{:href => '/support'} Support
-        %a.nav-link{:href => '/contact'} Contact
 

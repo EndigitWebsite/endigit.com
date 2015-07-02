@@ -45,6 +45,15 @@ helpers do
   def ext_link(text, address)
     return "<a rel='nofollow' target='_blank' href='#{address}'>#{text}</a>"
   end
+  def page_title
+    if data.page.title
+      return 'Endigit ' + data.page.title
+    end
+    return 'Endigit'
+  end
+  def page_description
+    return data.page.description || 'Represent Endigit to customers and potential customers'
+  end
 end
 
 set :css_dir, 'stylesheets'
