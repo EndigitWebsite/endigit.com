@@ -1,3 +1,6 @@
+// Currently not needed on the site, so I'm taking it off the page load, not that it would
+// slow anything down, but it's just not needed
+
 // Just out of habit I almost want to make classes and associate these objects correctly,
 // but that seems like overkill at the moment, and I don't expect this list will be terribly
 // out of hand for a very long time, so a simple hard-coded list should work fine.

@@ -22,6 +22,7 @@
 
 .footer {
   background-color: $blue1;
+  clear: left;
   margin-top: 16px;
   .nav-link {
     color: $blue4;
@@ -39,7 +40,21 @@
   z-index: -1;
 }
 
-.img-wrap {
+.certification-image {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.product-image {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.image-wrap {
   float: left;
   margin: 0 24px 16px 0;
+}
+
+.small {
+  font-size: 14px;
 }
