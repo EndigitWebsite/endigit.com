@@ -1,0 +1,22 @@
+.head {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.head-logo {
+  padding-right: 20px;
+  width: 200px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 16px;
+  &:hover {
+    color: $blue4;
+  }
+}
+
+.ni-alliance-badge {
+  padding: 10px;
+  width: 150px;
+}

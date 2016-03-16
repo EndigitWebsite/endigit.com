@@ -1,10 +1,13 @@
 @import 'normalize';
-@import 'base';
 
+@import 'base';
+@import 'foot';
+@import 'head';
 
 .section-wrap {
   margin: 0 auto;
   max-width: 100%;
+  overflow: hidden;
   padding: 16px;
   width: 760px;
   &.short {
@@ -15,34 +18,13 @@
   }
 }
 
-.nav-link {
-  margin-right: 16px;
-  font-weight: 300;
-}
-
-.footer {
-  background-color: $blue1;
-  clear: left;
-  margin-top: 16px;
-  .nav-link {
-    color: $blue4;
-    &:hover {
-      color: white;
-    }
-  }
-}
-
-.footer-back {
-  background-color: $blue1;
-  height: 100%;
-  width: 100%;
-  position:  fixed;
-  z-index: -1;
-}
-
 .certification-image {
   max-height: 200px;
   max-width: 200px;
+}
+
+.page-content-wrap {
+  background-color: #fff;
 }
 
 .product-image {

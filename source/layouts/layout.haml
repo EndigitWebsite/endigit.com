@@ -10,12 +10,13 @@
     %meta{:itemprop => 'description', :content => page_description}
     %meta#meta-tag-description{:property => 'og:description', :content => page_description}
     = javascript_include_tag 'all'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,300'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400'
     = stylesheet_link_tag 'all'
   %body
-    .head.section-wrap.short
-      .head-logo
-        %img{:src => '/images/customLogo.png'}
+    .head.section-wrap
+      .head-logo-wrap
+        %img.head-logo{:src => '/images/logo.png'}
+        %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
       %a.nav-link{:href => '/'} Home
       %a.nav-link{:href => '/why-labview'} Why LabVIEW?
       %a.nav-link{:href => '/expertise'} Expertise
@@ -24,9 +25,9 @@
       %a.nav-link{:href => '/support'} Support
       %a.nav-link{:href => '/contact'} Contact
       %a.nav-link{:href => '/blog'} Blog
-    .section-wrap
-      = yield
-    .footer
-      .footer-back
-      .section-wrap.tall
-
+    .page-content-wrap
+      .section-wrap
+        = yield
+    .foot.section-wrap.tall
+      .copyright-wrap
+        &copy; 2016 Endigit
