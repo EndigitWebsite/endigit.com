@@ -1,6 +1,7 @@
+@import 'variables';
+
 .head {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include antialiased;
 }
 
 .head-logo {
@@ -9,7 +10,7 @@
 }
 
 .nav-link {
-  color: #fff;
+  color: $white;
   margin-right: 16px;
   &:hover {
     color: $blue4;

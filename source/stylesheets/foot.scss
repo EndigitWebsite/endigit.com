@@ -1,3 +1,5 @@
+@import 'variables';
+
 .copyright-wrap {
   color: $grey;
   font-size: 12px;
@@ -5,8 +7,7 @@
 }
 
 .foot {
+  @include antialiased;
   clear: left;
   margin-top: 16px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }

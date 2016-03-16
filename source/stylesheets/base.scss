@@ -1,14 +1,4 @@
-$blue1: #052a5d;
-$blue2: #2e4c7a;
-$blue3: #2b5fc0;
-$blue4: lighten($blue3, 30%);
-$grey: #8f938e;
-
-@mixin border-box {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import 'variables';
 
 a {
   color: $blue3;
