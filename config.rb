@@ -82,9 +82,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-#activate :deploy do |deploy|
-#  deploy.build_before = true
-#  deploy.method = :git
-#  deploy.remote = 'production'
-#  deploy.branch = 'master'
-#end
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.remote = 'production'
+  deploy.branch = 'master'
+end
