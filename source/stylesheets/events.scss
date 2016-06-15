@@ -1,0 +1,66 @@
+@import 'variables';
+
+#events {
+  border: 3px solid $blue1;
+  border-radius: 10px;
+  //float: right;
+  width: 100%;
+  @media (min-width: 600px){
+    width: 35%;
+    float: right;
+  }
+}
+
+#eventsTitle{
+  background-color: $blue1;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.event {
+  padding: 10px;
+}
+
+.eventName {
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.eventDate {
+  font-size: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.eventLocation {
+  font-size: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.eventDescription{
+  font-size: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+hr {
+  border: none;
+  width: 95%;
+  height: 3px;
+  background-color: $blue1;
+}
+
+.content {
+//  clear: both;
+  @media (min-width: 600px){
+//    clear: none;
+    width: 65%;
+    padding-right: 10px;
+    float: left;
+  }
+}
