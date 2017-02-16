@@ -4,11 +4,18 @@
   @include antialiased;
 }
 
+/*for logo in page header*/
 .head-logo {
   padding-right: 20px;
   width: 200px;
 }
 
+//For navigation links
+.navigation-box{
+  float: right;
+}
+
+/*for the navigation menu.  sets color when mouse hovers*/
 .nav-link {
   color: $white;
   margin-right: 16px;

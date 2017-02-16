@@ -3,11 +3,30 @@
 .copyright-wrap {
   color: $grey;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 .foot {
   @include antialiased;
   clear: left;
   margin-top: 16px;
+}
+
+//Table settings for footer
+.footer-table{
+  padding: 20px;
+  width: 100%;
+ // vertical-align: middle;
+}
+
+//middle td for the copyright info
+.footer-table-middle{
+  text-align: center;
+  vertical-align: bottom;
+}
+
+//right td for Alliance partner image
+.footer-table-right{
+  text-align: right;
+  vertical-align: bottom;
 }

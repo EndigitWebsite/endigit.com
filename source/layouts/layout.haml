@@ -16,20 +16,64 @@
   %body
     .head.section-wrap
       .head-logo-wrap
-        %img.head-logo{:src => '/images/logo.png'}
-        %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
-      %a.nav-link{:href => '/'} Home
-      %a.nav-link{:href => '/why-labview'} Why LabVIEW?
-      %a.nav-link{:href => '/SquareBattle'} SquareBattle
-      %a.nav-link{:href => '/expertise'} Expertise
-      %a.nav-link{:href => '/products'} Products
-      //%a.nav-link{:href => '/bacnet'} BACnet
-      %a.nav-link{:href => '/support'} Support
-      %a.nav-link{:href => '/contact'} Contact
-      %a.nav-link{:href => '/blog'} Blog
+        %a{:href => '/'}
+          %img.head-logo{:src => '/images/logo.png'}
+      .navigation-box
+        %a.nav-link{:href => '/expertise'} Services
+        %a.nav-link Industries 
+        //need to add page for industries
+        %a.nav-link{:href => '/products'} Products
+        %a.nav-link{:href => '/blog'} Technical Data
+        %a.nav-link{:href => '/contact'} Contact
+//Need to add drop downs for the menu items
     .page-content-wrap
-      .section-wrap
-        = yield
+      = yield
     .foot.section-wrap.tall
-      .copyright-wrap
-        &copy; 2017 Endigit
+      %table.footer-table
+        %tr
+          %td
+            %img.head-logo{:src => '/images/logo.png'}
+          %td
+            .copyright-wrap
+              &copy; 2017 Endigit
+          %td.footer-table-right
+            %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
+        %table
+          %tr
+            %td
+              %table
+                %tr
+                  %h3 About
+                %tr 
+                  %h5 Endigit provides custom LabVIEW applications for automated test, data acquisition systmes, and embedded control and monitoring.
+            %td
+              %table
+                %tr 
+                  %h3 Services
+                %tr 
+                  %h5 LabVIEW consulting
+                %tr 
+                  %h5 Turnkey Systems
+                %tr
+                  %h5 Data Acquisitions Systems
+                %tr
+                  %h5 Automated Test Consulting
+                %tr
+                  %h5 Industrial Control
+                %tr
+                  %h5 Embedded Control and Monitoring
+            %td
+              %table
+                %tr
+                  %h3 Industries
+                %tr 
+                  %h5 Aerospace/Defense
+                %tr 
+                  %h5 Biomedical
+                %tr 
+                  %h5 Industrial Control
+                %tr 
+                  %h5 Automated Test
+  //I don't really like the way the bottom looks.  I think I may drop it out. By it I mean the second table.
+            
+   
