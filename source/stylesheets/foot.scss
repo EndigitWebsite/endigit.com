@@ -8,19 +8,22 @@
 
 .foot {
   @include antialiased;
-  clear: left;
-  margin-top: 16px;
+  clear: both;
+ margin-top: 5px;
+ margin-bottom: 20px;
 }
 
 //Table settings for footer
 .footer-table{
-  padding: 20px;
+  padding: 0;
   width: 100%;
+  overflow-wrap: normal;
  // vertical-align: middle;
 }
 
 //middle td for the copyright info
 .footer-table-middle{
+  padding: 0 20 0 20;
   text-align: center;
   vertical-align: bottom;
 }

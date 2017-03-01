@@ -28,52 +28,45 @@
         //Need to add drop downs for the menu items
     .page-content-wrap
       = yield
-    .foot.section-wrap.tall
+    .foot.section-wrap
       %table.footer-table
         %tr
           %td
-            %img.head-logo{:src => '/images/logo.png'}
+            %table
+              %tr
+                %h3 About
+              %tr 
+                %h5 Endigit provides custom LabVIEW applications for automated test, data acquisition systmes, and embedded control and monitoring.
+          %td.footer-table-middle
+            %h3 Services
+            %a{:href=> "/LabVIEWConsulting"}LabVIEW Consulting
+            %br
+            %a{:href=> "/turnkey"}Turnkey Systems
+            %br
+            //%a{:href=> "/DAS"}Data Acquisitions Systems
+            %br
+            //%a{:href=> "/AutomatedTest"}Automated Test Consulting
+            %br
+            // %a{:href=> "/IndustrialControl"}Industrial Control
+            //Embedded Control and Monitoring
           %td
-            .copyright-wrap
-              &copy; 2017 Endigit
-          %td.footer-table-right
-            %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
-        %table
+            %h3 Industries
+            %br
+            %a{:href=> "/AeroDef"}Aerospace/Defense
+            %br
+            %a{:href=> "/Medical"} Medical Devices
+            //%br
+            // %a{:href=> "/Industrial"}Industrial Control
+            //%br
+            //%a{:href=> "/Electronics"}Consumer Electronics
+        %table.footer-table
           %tr
             %td
-              %table
-                %tr
-                  %h3 About
-                %tr 
-                  %h5 Endigit provides custom LabVIEW applications for automated test, data acquisition systmes, and embedded control and monitoring.
+              %img.head-logo{:src => '/images/logo.png'}
             %td
-              %table
-                %tr 
-                  %h3 Services
-                %tr 
-                  %h5 LabVIEW consulting
-                %tr 
-                  %h5 Turnkey Systems
-                %tr
-                  %h5 Data Acquisitions Systems
-                %tr
-                  %h5 Automated Test Consulting
-                %tr
-                  %h5 Industrial Control
-                %tr
-                  %h5 Embedded Control and Monitoring
-            %td
-              %table
-                %tr
-                  %h3 Industries
-                %tr 
-                  %h5 Aerospace/Defense
-                %tr 
-                  %h5 Biomedical
-                %tr 
-                  %h5 Industrial Control
-                %tr 
-                  %h5 Automated Test
-  //I don't really like the way the bottom looks.  I think I may drop it out. By it I mean the second table.
-            
-   
+              .copyright-wrap
+                &copy; 2017 Endigit
+            %td.footer-table-right
+              %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
+                  
+         
