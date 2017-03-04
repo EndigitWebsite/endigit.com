@@ -9,8 +9,8 @@
   max-width: 100%;
   overflow: hidden;
   padding: 16px;
-  width: 860px;
-/*  width: 100%;*/
+  //width: 860px;
+  width: 75%;
   &.short {
     padding: 0 16px;
   }
@@ -38,8 +38,12 @@
   margin: 0 24px 16px 0;
 }
 
+//Displays the big full width banner image
 .main-banner-image{
+  background: center no-repeat;
+  background-size: cover;
   width: 100%;
+  z-index: 0;
 }
 
 .small {
@@ -48,10 +52,33 @@
 
 /* Banner for the call to action */
 .call-to-action{
-  background-color: grey;
+  background-color: #D0870E;
   font-size: 24px;
-  color: red;
+  color: black;
   width: 100%;
   padding: 20px 10px;
   margin-bottom: 10px;
+}
+
+.customer-box{
+  width: 70%;
+  height: 175px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  float: left;
+  margin-right: 1px;
+}
+
+.customer-box-image{
+  height: 150px;
+}
+
+.blog-update-box{
+  width: 28%;
+  height: 175px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  float: right;
 }

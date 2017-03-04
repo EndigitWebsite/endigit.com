@@ -10,21 +10,61 @@
   width: 200px;
 }
 
-//For navigation links
-.navigation-box{
-  float: right;
-}
-
-/*for the navigation menu.  sets color when mouse hovers*/
-.nav-link {
-  color: $white;
-  margin-right: 16px;
-  &:hover {
-    color: $blue4;
-  }
-}
-
 .ni-alliance-badge {
   padding: 10px;
   width: 150px;
 }
+
+//Stuff for the dropdown menus
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    //background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    //background-color: red;
+    color: $blue4;
+}
+
+li.dropdown {
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    //padding: 12px 16px;
+    text-decoration: none;
+    display: list-item;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+//end of the dropdown menu stuff

@@ -18,55 +18,51 @@
       .head-logo-wrap
         %a{:href => '/'}
           %img.head-logo{:src => '/images/logo.png'}
-      .navigation-box
-        %a.nav-link{:href => '/expertise'} Services
-        %a.nav-link Industries 
-        //need to add page for industries
-        %a.nav-link{:href => '/products'} Products
-        %a.nav-link{:href => '/blog'} Technical Data
-        %a.nav-link{:href => '/contact'} Contact
-        //Need to add drop downs for the menu items
+      %ul
+        %li
+          %a.nav-link{:href => '/contact'} Contact
+        %li.dropdown
+          %a.dropbtn{:href => '/techdata'} Technical Data
+          .dropdown-content
+            %a{:href=> "/techdata/whitepapers"} White Papers
+            %a{:href=> "/blog"} Blog
+            %a{:href=> "/techdata/casestudies"} Projects
+        %li.dropdown
+          %a.dropbtn{:href => '/products'} Products  
+          .dropdown-content
+            %a{:href=> "/Products/ipblaster"} IP Blaster
+            %a{:href=> "/Products/bacnet"} BACnet LabVIEW API
+            %a{:href=> "/Products/SquareBattle"} SquareBattle
+        %li.dropdown
+          %a.dropbtn{:href=> "/industries"} Industries 
+          .dropdown-content
+            %a{:href=> "/Industries/AeroDef"}Aerospace/Defense
+            %a{:href=> "/Industries/Medical"} Medical
+            %a{:href=> "/Services/control"} Industrial Control
+            %a{:href=> "/Industries/electronics"} Consumer Electronics
+            %a{:href=> "/Industries/oilandgas"} Oil and Gas
+        %li.dropdown
+          %a.dropbtn{:href=> "/services"} Services
+          .dropdown-content
+            %a{:href=> "/Services/LabVIEW"} LabVIEW Development
+            %a{:href=> "/Services/turnkey"} Turnkey Systems
+            %a{:href=> "/Services/control"} Industrial and Embedded Control
+            %a{:href=> "/Services/vision"} Vision Systems
+            %a{:href=> "/Services/autoTest"} Automated Test Consulting
+            
     .page-content-wrap
       = yield
     .foot.section-wrap
       %table.footer-table
         %tr
           %td
-            %table
-              %tr
-                %h3 About
-              %tr 
-                %h5 Endigit provides custom LabVIEW applications for automated test, data acquisition systmes, and embedded control and monitoring.
-          %td.footer-table-middle
-            %h3 Services
-            %a{:href=> "/LabVIEWConsulting"}LabVIEW Consulting
-            %br
-            %a{:href=> "/turnkey"}Turnkey Systems
-            %br
-            //%a{:href=> "/DAS"}Data Acquisitions Systems
-            %br
-            //%a{:href=> "/AutomatedTest"}Automated Test Consulting
-            %br
-            // %a{:href=> "/IndustrialControl"}Industrial Control
-            //Embedded Control and Monitoring
+            %img.head-logo{:src => '/images/logo.png'}
           %td
-            %h3 Industries
-            %br
-            %a{:href=> "/AeroDef"}Aerospace/Defense
-            %br
-            %a{:href=> "/Medical"} Medical Devices
-            //%br
-            // %a{:href=> "/Industrial"}Industrial Control
-            //%br
-            //%a{:href=> "/Electronics"}Consumer Electronics
-        %table.footer-table
-          %tr
-            %td
-              %img.head-logo{:src => '/images/logo.png'}
-            %td
-              .copyright-wrap
-                &copy; 2017 Endigit
-            %td.footer-table-right
-              %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
-                  
+            .copyright-wrap
+              &copy; 2017 Endigit
+          %td.footer-table-right
+            %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
+                
          
+       
+  
