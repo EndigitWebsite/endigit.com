@@ -22,19 +22,20 @@
         %li
           %a.nav-link{:href => '/contact'} Contact
         %li.dropdown
-          %a.dropbtn{:href => '/techdata'} Technical Data
+          %a.dropbtn Technical Data
           .dropdown-content
             %a{:href=> "/techdata/whitepapers"} White Papers
-            %a{:href=> "/blog"} Blog
+            %a{:href=> "http://blog.endigit.com"} Blog
+            //#{ext_link 'Blog', 'http://blog.endigit.com'}
             %a{:href=> "/techdata/casestudies"} Projects
         %li.dropdown
-          %a.dropbtn{:href => '/products'} Products  
+          %a.dropbtn Products  
           .dropdown-content
             %a{:href=> "/Products/ipblaster"} IP Blaster
             %a{:href=> "/Products/bacnet"} BACnet LabVIEW API
             %a{:href=> "/Products/SquareBattle"} SquareBattle
         %li.dropdown
-          %a.dropbtn{:href=> "/industries"} Industries 
+          %a.dropbtn Industries 
           .dropdown-content
             %a{:href=> "/Industries/AeroDef"}Aerospace/Defense
             %a{:href=> "/Industries/Medical"} Medical
@@ -42,10 +43,9 @@
             %a{:href=> "/Industries/electronics"} Consumer Electronics
             %a{:href=> "/Industries/oilandgas"} Oil and Gas
         %li.dropdown
-          %a.dropbtn{:href=> "/services"} Services
+          %a.dropbtn Services
           .dropdown-content
             %a{:href=> "/Services/LabVIEW"} LabVIEW Development
-            %a{:href=> "/Services/turnkey"} Turnkey Systems
             %a{:href=> "/Services/control"} Industrial and Embedded Control
             %a{:href=> "/Services/vision"} Vision Systems
             %a{:href=> "/Services/autoTest"} Automated Test Consulting

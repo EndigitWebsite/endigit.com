@@ -82,3 +82,14 @@
   padding: 10px;
   float: right;
 }
+
+.text-box{
+  //wrap: soft;
+  width: 90%;
+  resize: both;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  float: left;
+  display: inline-block;
+}
