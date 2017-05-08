@@ -16,24 +16,17 @@
   %body
     .head.section-wrap
       .head-logo-wrap
-        %a{:href => '/'}
-          %img.head-logo{:src => '/images/logo.png'}
-      %ul
-        %li
-          %a.nav-link{:href => '/contact'} Contact
+      //  %a{:href => '/'}
+      //   %img.head-logo{:src => '/images/logo.png'}
+      %ul.navigation
         %li.dropdown
-          %a.dropbtn Technical Data
+          %a.dropbtn Services
           .dropdown-content
-            %a{:href=> "/techdata/whitepapers"} White Papers
-            %a{:href=> "http://blog.endigit.com"} Blog
-            //#{ext_link 'Blog', 'http://blog.endigit.com'}
-            %a{:href=> "/techdata/casestudies"} Projects
-        %li.dropdown
-          %a.dropbtn Products  
-          .dropdown-content
-            %a{:href=> "/Products/ipblaster"} IP Blaster
-            %a{:href=> "/Products/bacnet"} BACnet LabVIEW API
-            %a{:href=> "/Products/SquareBattle"} SquareBattle
+            %a{:href=> "/Services/LabVIEW"} LabVIEW Development
+            %a{:href=> "/Services/daq"} Data Acquisition
+            %a{:href=> "/Services/autoTest"} Automated Test
+            %a{:href=> "/Services/control"} Industrial and Embedded Control
+            %a{:href=> "/Services/vision"} Vision Systems
         %li.dropdown
           %a.dropbtn Industries 
           .dropdown-content
@@ -41,27 +34,60 @@
             %a{:href=> "/Industries/Medical"} Medical
             %a{:href=> "/Services/control"} Industrial Control
             %a{:href=> "/Industries/electronics"} Consumer Electronics
-            %a{:href=> "/Industries/oilandgas"} Oil and Gas
+            %a{:href=> "/Industries/Energy"} Energy
         %li.dropdown
-          %a.dropbtn Services
+          %a.dropbtn Products  
           .dropdown-content
-            %a{:href=> "/Services/LabVIEW"} LabVIEW Development
-            %a{:href=> "/Services/control"} Industrial and Embedded Control
-            %a{:href=> "/Services/vision"} Vision Systems
-            %a{:href=> "/Services/autoTest"} Automated Test Consulting
-            
+            %a{:href=> "/Products/ipblaster"} IP Blaster
+            %a{:href=> "/Products/bacnet"} BACnet LabVIEW API
+            %a{:href=> "/Products/SquareBattle"} SquareBattle
+        %li.dropdown
+          %a.dropbtn Technical Data
+          .dropdown-content
+            %a{:href=> "/techdata/whitepapers"} White Papers
+            %a{:href=> "/techdata/casestudies"} Case Studies
+        %li
+          %a.nav-link{:href=> "http://blog.endigit.com"} Blog
+        %li
+          %a.nav-link{:href => '/contact'} Contact
     .page-content-wrap
       = yield
-    .foot.section-wrap
-      %table.footer-table
-        %tr
-          %td
-            %img.head-logo{:src => '/images/logo.png'}
-          %td
-            .copyright-wrap
-              &copy; 2017 Endigit
-          %td.footer-table-right
-            %img.ni-alliance-badge{:src => '/images/national-instruments/silver-alliance-partner.png'}
+    .foot
+      .section-wrap Endigit makes a contribution to the world by helping our customers increase efficiency and improve products by providing premier LabVIEW software development along with data acquisition, automated test, and embedded monitoring and control systems.
+      .item-box.white-border-top
+        .item.item1
+          %label Services
+          %a{:href=> "/Services/LabVIEW"} LabVIEW Development  
+          %a{:href=> "/Services/daq"} Data Acquisition
+          %a{:href=> "/Services/autoTest"} Automated Test
+          %a{:href=> "/Services/control"} Control
+          %a{:href=> "/Services/vision"} Vision Systems
+        .item.item2
+          %label Industries
+          %a{:href=> "/Industries/AeroDef"}Aerospace/Defense
+          %a{:href=> "/Industries/Medical"} Medical
+          %a{:href=> "/Services/control"} Industrial Control
+          %a{:href=> "/Industries/electronics"} Consumer Electronics
+          %a{:href=> "/Industries/Energy"} Energy
+        .item.item3
+          %label Products
+          %a{:href=> "/Products/ipblaster"} IP Blaster
+          %a{:href=> "/Products/bacnet"} BACnet LabVIEW API
+          %a{:href=> "/Products/SquareBattle"} SquareBattle
+        .item.item4
+          %label Technical Data
+          %a{:href=> "/techdata/whitepapers"} White Papers
+          %a{:href=> "/techdata/casestudies"} Case Studies
+        .item.item5
+          %a{:href=> "http://blog.endigit.com"} Blog
+        .item.item6
+          %a{:href => '/contact'} Contact
+        .item-box.item7
+          %a{:href=> "https://www.facebook.com/EndigitEngineers/"}
+            %img{:src=> '/images/Icons/facebook_icon.svg'}
+              
+              
+        
                 
          
        

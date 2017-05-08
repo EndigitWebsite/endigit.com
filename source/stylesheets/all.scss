@@ -8,8 +8,6 @@
   margin: 0 auto;
   max-width: 100%;
   overflow: hidden;
-  padding: 16px;
-  //width: 860px;
   width: 75%;
   &.short {
     padding: 0 16px;
@@ -42,8 +40,11 @@
 .main-banner-image{
   background: center no-repeat;
   background-size: cover;
-  width: 100%;
+  //width: 100%;
   z-index: 0;
+  //position:absolute;
+  //top: 0;
+  //left: 0;
 }
 
 .small {
@@ -61,17 +62,84 @@
 }
 
 .customer-box{
-  width: 70%;
-  height: 175px;
-  border: 2px solid black;
-  border-radius: 20px;
+  border-top: 5px solid black;
   padding: 10px;
-  float: left;
-  margin-right: 1px;
+}
+
+.client-label{
+  text-align: center;
+  font-weight: bold;
+}
+
+.item-box{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+@media all and (max-width:600px){
+  .item-box{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.item1{
+  order: 1;
+}
+
+.item2{
+  order: 2;
+}
+
+.item3{
+  order: 3;
+}
+
+.item4{
+  order:4;
+}
+
+.item5{
+  order:5;
+}
+
+.item6{
+  order:6;
+}
+
+.item7{
+  order:7;
+}
+
+.item{
+  width:270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.item-image{
+  width: 134px;
+  height: 134px;
+  aligh: center;
 }
 
 .customer-box-image{
-  height: 150px;
+  height: 100px;
+}
+
+.white-border-top{
+  //border-color: white;
+  border-top: solid 1px white;
+  padding: 5px;
 }
 
 .blog-update-box{

@@ -10,7 +10,8 @@ a {
 }
 
 body {
-  background-color: $blue1;
+  //background-color: $blue1;
+  font-family: Roboto;
 }
 
 blockquote {
@@ -22,8 +23,9 @@ div {
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
-  color: $blue1;
+  //font-family: 'Open Sans', sans-serif;
+ //font-family: Roboto;
+ // color: $blue1;
 }
 
 h1, h2, h3, h4, h5 {

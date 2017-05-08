@@ -9,8 +9,10 @@
 .foot {
   @include antialiased;
   clear: both;
- margin-top: 5px;
- margin-bottom: 20px;
+  margin-top: 5px;
+  background-color: $blue1;
+  width: 100%;
+  color: white;
 }
 
 //Table settings for footer
